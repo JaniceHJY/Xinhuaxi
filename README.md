@@ -1,4 +1,4 @@
-# Simple Personal Care Website — PureBloom (example)
+# Simple Personal Care Website — XinHuaXi
 
 What you get:
 - index.html — landing page and structure
