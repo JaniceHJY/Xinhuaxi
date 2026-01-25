@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Xinhuaxi — Natural Personal Care</title>
+  <meta name="description" content="Xinhuaxi — gentle, natural personal care products made with clean ingredients." />
+  <link rel="alternate" href="zh/" hreflang="zh" />
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="./">Xinhuaxi</a>
+
+      <div class="lang-switch">
+        <button id="lang-toggle" aria-haspopup="true" aria-expanded="false">EN ▾</button>
+        <div id="lang-menu" class="lang-menu" aria-hidden="true">
+          <button data-lang="en" data-target="./">English</button>
+          <button data-lang="zh" data-target="zh/">简体中文</button>
+        </div>
+      </div>
+
+      <nav class="site-nav">
+        <a href="products/">Products</a>
+        <a href="about/">About</a>
+        <a href="contact/">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <h1>Gentle care from nature</h1>
+          <p>Clean, thoughtfully sourced personal care products made for everyday self-care.</p>
+          <p class="cta-row">
+            <a class="btn primary" href="products/">Shop Bestsellers</a>
+            <a class="btn ghost" href="about/">Learn More</a>
+          </p>
+        </div>
+        <div class="hero-image" aria-hidden="true">
+          <img src="https://images.unsplash.com/photo-1517256064527-09c73fc73e15?auto=format&fit=crop&w=900&q=60" alt="Assorted personal care products on a clean background">
+        </div>
+      </div>
+    </section>
+
+    <section id="products" class="section container">
+      <h2>Featured Products</h2>
+      <p class="section-sub">Curated favorites for gentle daily care.</p>
+      <div class="products-grid">
+        <article class="product-card">
+          <img src="https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?auto=format&fit=crop&w=800&q=60" alt="Bottle of body wash">
+          <h3>Hydrating Body Wash</h3>
+          <p class="price">$18</p>
+          <p class="card-copy">A gentle cleanser with aloe and chamomile to soothe and hydrate.</p>
+          <a class="btn" href="#">View</a>
+        </article>
+
+        <article class="product-card">
+          <img src="https://images.unsplash.com/photo-1522337660859-02fbefca4702?auto=format&fit=crop&w=800&q=60" alt="Jar of cream">
+          <h3>Daily Moisturizer</h3>
+          <p class="price">$24</p>
+          <p class="card-copy">Lightweight, non-greasy moisturizer enriched with jojoba oil.</p>
+          <a class="btn" href="#">View</a>
+        </article>
+
+        <article class="product-card">
+          <img src="https://images.unsplash.com/photo-1585386959984-a415522b4e8b?auto=format&fit=crop&w=800&q=60" alt="Dropper bottle">
+          <h3>Calming Facial Oil</h3>
+          <p class="price">$32</p>
+          <p class="card-copy">A restorative oil blend for nightly nourishment and glow.</p>
+          <a class="btn" href="#">View</a>
+        </article>
+      </div>
+    </section>
+
+    <section id="about" class="section light">
+      <div class="container about-grid">
+        <div>
+          <h2>About Xinhuaxi</h2>
+          <p>We handcraft personal care essentials with sustainable sourcing and minimal, transparent ingredient lists.</p>
+          <ul class="bullets">
+            <li>Natural & ethically sourced ingredients</li>
+            <li>Eco-friendly packaging</li>
+            <li>Dermatologist-tested formulations</li>
+          </ul>
+        </div>
+        <div>
+          <img src="https://images.unsplash.com/photo-1542831371-d531d36971e6?auto=format&fit=crop&w=900&q=60" alt="Hands holding plant" />
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section container">
+      <div class="container">
+        <h2>Contact & Wholesale</h2>
+        <p>Have a question or want to carry Xinhuaxi in your store? Drop us a note.</p>
+        <form class="contact-grid" method="POST" action="https://formspree.io/f/YOUR_FORM_ID">
+          <label>
+            <span>Name</span>
+            <input type="text" name="name" required>
+          </label>
+          <label>
+            <span>Email</span>
+            <input type="email" name="email" required>
+          </label>
+          <label class="full">
+            <span>Message</span>
+            <textarea name="message" rows="5" required></textarea>
+          </label>
+          <div class="form-actions">
+            <button class="btn primary" type="submit">Send Message</button>
+            <a class="btn ghost" href="mailto:hello@xinhuaxi.example">Email: hello@xinhuaxi.example</a>
+          </div>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>&copy; <span id="year"></span> Xinhuaxi. All rights reserved.</p>
+      <nav class="footer-nav">
+        <a href="privacy/">Privacy</a>
+        <a href="terms/">Terms</a>
+      </nav>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
