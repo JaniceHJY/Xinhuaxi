@@ -2,8 +2,8 @@
 
 What this includes
 - English pages: `index.html`, `products.html`, `about.html`, `contact.html`
-- Spanish pages in `es/`: `es/index.html`, `es/products.html`, `es/about.html`, `es/contact.html`
-- Shared styles: `styles.css`
+- Chinese pages in `ch/`: `ch/index.html`, `ch/products.html`, `ch/about.html`, `ch/contact.html`
+- Shared styles: `styles.csss`
 - Shared behavior: `script.js` (language switcher, small UI helpers)
 
 How the language switching works
