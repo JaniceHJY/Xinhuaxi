@@ -47,6 +47,12 @@ body{
   font-size:1.125rem;
 }
 
+.brand_logo{
+  height:28px;
+  width: auto;
+  display: block;
+}
+
 /* Lang menu */
 .lang-switch{position:relative}
 .lang-switch button{background:none;border:none;font-weight:600;cursor:pointer}
