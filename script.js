@@ -93,5 +93,45 @@
     } catch (e) {
       // ignore storage errors
     }
+
+    // helper for the product gallery thumbnail logic
+    (function () {
+      const root = document.querySelector("[data-gallery]");
+      if (!root) return;
+
+      const mainImg = root.querySelector("[data-main]");
+      const thumbs = Array.from(root.querySelectorAll(".thumb"));
+      const prevBtn = root.querySelector("[data-prev]");
+      const nextBtn = root.querySelector("[data-next]");
+
+      let index = 0;
+
+      function setActive(i) {
+        index = (i + thumbs.length) % thumbs.length;
+        const src = thumbs[index].dataset.src;
+
+        mainImg.src = src;
+        thumbs.forEach((t) => t.classList.remove("is-active"));
+        thumbs[index].classList.add("is-active");
+
+        // show the selected thumbnail
+        thumbs[index].scrollIntoView({ behavior: "smooth", inline: "center", block: "nearest" });
+      }
+
+      thumbs.forEach((btn, i) => {
+        btn.addEventListener("click", () => setActive(i));
+      });
+
+      prevBtn?.addEventListener("click", () => setActive(index - 1));
+      nextBtn?.addEventListener("click", () => setActive(index + 1));
+
+      // selection by keyboard
+      root.addEventListener("keydown", (e) => {
+        if (e.key === "ArrowLeft") setActive(index - 1);
+        if (e.key === "ArrowRight") setActive(index + 1);
+      });
+
+      setActive(0);
+    })();
   });
 })();
