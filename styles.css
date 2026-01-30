@@ -89,13 +89,13 @@ body{
 
 /* Product Gallery */
 .pdp-grid{display:grid;grid-template-columns: 1.1fr 0.9fr;gap: 2rem;align-items:start;}
-.gallery{display:flex;justify-content:center;flex-direction:row-reverse;align-items:flex-start;margin:auto}
+.gallery{display:flex;justify-content:center;justify-items:end;flex-direction:row-reverse;align-items:flex-start;}
 @media (max-width: 900px){
   .pdp-grid{ grid-template-columns: 1fr; }
 }
 
 .gallery-main{position:relative;border-radius: 16px;overflow:hidden;background:#f5f5f5;}
-.gallery-main-img{width: 500px;height:auto;display:block;object-fit:cover;aspect-ratio: 1 / 1; /* 可改成 4/5 或 3/4 */}
+.gallery-main-img{width: 560px;height:auto;display:block;object-fit:cover;aspect-ratio: 1 / 1; /* 可改成 4/5 或 3/4 */}
 .gallery-nav{position:absolute;top:50%;transform:translateY(-50%);border:0;width:40px;height:40px;border-radius:999px;background: rgba(255,255,255,0.85);cursor:pointer;display:grid;place-items:center;font-size:22px;}
 .gallery-nav.prev{left:12px;}
 .gallery-nav.next{right:12px;}
