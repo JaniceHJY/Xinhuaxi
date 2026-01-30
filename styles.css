@@ -19,6 +19,12 @@ body{
   line-height:1.5;
 }
 
+/* Global media safety */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
 .container{
   max-width:var(--container);
   margin:0 auto;
@@ -124,8 +130,23 @@ body{
   .products-grid{grid-template-columns:repeat(2,1fr)}
   .about-grid{grid-template-columns:1fr}
   .contact-grid{grid-template-columns:1fr}
+  .pdp-grid{grid-template-columns: 1fr 1fr;gap: 1.5rem;}
 }
 @media (max-width:560px){
   .products-grid{grid-template-columns:1fr}
   .hero-copy h1{font-size:1.5rem}
+  .thumb img{width: 56px;height: 56px;}
+  .gallery-thumbs{gap: 8px;}
+}
+
+/* Extra mobile tuning */
+@media (max-width: 768px) {
+  .container {padding: 0.875rem;}
+  .header-inner {gap: 0.75rem;flex-wrap: wrap; /* 防止 header 挤爆 */}
+  .site-nav {gap: 1rem; /* 你现在 nav gap 很大，手机会炸 */flex-wrap: wrap;}
+  .btn {width: 100%;/* 手机按钮更好点 */text-align: center;}
+  .cta-row {display: grid;gap: 0.75rem;}
+  .product-card img {height: auto;aspect-ratio: 1 / 1;/* 手机更稳，不会被压扁 */object-fit: cover;}
+  .pdp-grid{grid-template-columns: 1fr;gap: 1.25rem;}
+  .thumb img{width: 64px;height: 64px;}
 }
