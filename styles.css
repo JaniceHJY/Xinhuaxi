@@ -62,11 +62,11 @@ img{max-width: 100%;height: auto;}
 /* Product Gallery */
 .pdp{padding: 2rem 5%;}
 .pdp-grid{display:grid;grid-template-columns: 1.1fr 0.9fr;gap: 2rem;align-items:start;}
-.pdp-info{position: sticky;top: 3rem;}
-/* 桌面端：左缩略图 + 右主图（不盖住） */
+.pdp-info{position: sticky;top:84px;}
+/* 主图 + 缩略图：桌面左右排 */
 .gallery-top{display:flex;gap: 12px;flex-direction:row-reverse;align-items:flex-start;}
 /* 主图区域要允许收缩，避免压住缩略图 */
-.gallery-main{position:relative;flex: 1 1 auto;min-width: 0;overflow:hidden;background:#f5f5f5;}
+.gallery-main{position:relative;flex: 1 1 auto;min-width:0;overflow:hidden;background:#f5f5f5;}
 .gallery-main-img{width: 100%;height:auto;display:block;object-fit:cover;aspect-ratio: 1 / 1; /* 可改成 4/5 或 3/4 */}
 .gallery-nav{position:absolute;top:50%;transform:translateY(-50%);border:0;width:40px;height:40px;border-radius:999px;background: rgba(255,255,255,0.85);cursor:pointer;display:grid;place-items:center;font-size:22px;}
 .gallery-nav.prev{left:12px;}
@@ -76,6 +76,8 @@ img{max-width: 100%;height: auto;}
 .thumb{border: 1px solid rgba(0,0,0,0.12);border-radius: 12px;padding:0;background:transparent;cursor:pointer;}
 .thumb img{width:84px;height:84px;object-fit:cover;border-radius: 12px;display:block;}
 .thumb.is-active{border-color: rgba(0,0,0,0.55);}
+.gallery-detail{display:grid;grid-template-columns:1fr 1fr;gap:1rem;margin-top:2rem;}
+
 
 /* PDP Details */
 .pdp-description{margin-top:1rem;color:var(--muted);line-height:1.6;}
@@ -113,7 +115,7 @@ img{max-width: 100%;height: auto;}
   .btn {width: 100%;/* 手机按钮更好点 */text-align: center;}
   .cta-row {display: grid;gap: 0.75rem;}
   .product-card img {height: auto;aspect-ratio: 1 / 1;/* 手机更稳，不会被压扁 */object-fit: cover;}
-  .pdp-info{position:;top: 3rem;}
+  .pdp-info{position:static;top:auto;}
   .pdp-grid{grid-template-columns: 1fr;gap: 1.25rem;padding:1rem}
   .pdp-desc-pic{width:100%;height:auto;object-fit:cover;margin-right:1rem;flex-shrink:0;}
   .gallery-top{flex-direction: column;padding:initial}
