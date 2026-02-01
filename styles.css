@@ -103,6 +103,7 @@ img {
 /* Product Gallery */
 .pdp{padding: 2rem 5%;}
 .pdp-grid{display:grid;grid-template-columns: 1.1fr 0.9fr;gap: 2rem;align-items:start;}
+.pdp-info{position: sticky;top: 3rem;}
 /* 桌面端：左缩略图 + 右主图（不盖住） */
 .gallery{display:flex;gap: 12px;flex-direction:row-reverse;align-items:flex-start;}
 /* 主图区域要允许收缩，避免压住缩略图 */
