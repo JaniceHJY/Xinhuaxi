@@ -110,6 +110,10 @@ img {
 .thumb img{width:84px;height:84px;object-fit:cover;border-radius: 12px;display:block;}
 .thumb.is-active{border-color: rgba(0,0,0,0.55);}
 
+/* PDP Details */
+.pdp-description{display:flex;margin-top:1rem;color:var(--muted);line-height:1.6;}
+.pdp-desc-pic{width:120px;height:auto;object-fit:cover;border-radius:12px;margin-right:1rem;flex-shrink:0;}
+
 /* About */
 .about-grid{display:grid;grid-template-columns:1fr 1fr;gap:2rem;align-items:center}
 .about-grid img{width:100%;border-radius:12px}
