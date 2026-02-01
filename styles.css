@@ -32,6 +32,12 @@ img {
   padding:1rem;
 }
 
+.widecontainer{
+  max-width:var(--widecontainer);
+  margin:0 auto;
+  padding:1rem;
+}
+
 .header-inner{
   display:flex;
   align-items:center;
@@ -141,12 +147,14 @@ img {
 /* Extra mobile tuning */
 @media (max-width: 768px) {
   .container {padding: 0.875rem;}
+  .widecontainer {padding: 0.875rem;}
   .header-inner {gap: 0.75rem;flex-wrap: wrap; /* 防止 header 挤爆 */}
   .site-nav {gap: 1rem; /* 你现在 nav gap 很大，手机会炸 */flex-wrap: wrap;}
   .btn {width: 100%;/* 手机按钮更好点 */text-align: center;}
   .cta-row {display: grid;gap: 0.75rem;}
   .product-card img {height: auto;aspect-ratio: 1 / 1;/* 手机更稳，不会被压扁 */object-fit: cover;}
   .pdp-grid{grid-template-columns: 1fr;gap: 1.25rem;padding:1rem}
+  .pdp-desc-pic{width:100%;height:auto;object-fit:cover;margin-right:1rem;flex-shrink:0;}
   .gallery{flex-direction: column;padding:initial}
   .gallery-thumbs{flex: none;width: 100%;flex-direction: row;margin-right: 0;overflow-x: auto;-webkit-overflow-scrolling: touch;padding-bottom: 6px;}
   .thumb img{width: 64px;height: 64px;}
