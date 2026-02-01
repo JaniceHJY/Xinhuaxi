@@ -19,17 +19,11 @@ How the language switching works
 - The script stores the chosen language in `localStorage` as `preferredLang` and will redirect to the preferred-language counterpart on subsequent visits.
 - Page mapping uses directory paths (no `.html` suffix). The script maps pages by the first or second segment (for zh/).
 
+Note
+- use jpg format and loading="lazy" mode for all image loading except for the hero picture in the main page to improve the website loading speed
+- try to use picture with aspect ratio of 1:1 for aesthetic purpose
+
 Deployment notes
 - Directory-style pages work out-of-the-box on Netlify, Vercel, and GitHub Pages (static sites). Keep the folder structure as provided.
 - If deploying to a subpath (for example `https://username.github.io/repo/`), update links or use absolute paths that include the repo base, or use a build step that sets a base path.
 - Replace the Formspree URL in forms with your endpoint and update the contact mailto if desired.
-
-Next options I can do
-- Add a single-template approach using a translations JSON + build script so you maintain content in one place.
-- Add canonical hreflang tags and sitemap entries for SEO.
-- Add server-side redirects/config for stricter language detection (optional).
-- Apply brand color(s) and a logo.
-
-Tell me if you want:
-- The single-template + build setup now (I can generate a simple node script).
-- Any color palette or a logo to apply.
