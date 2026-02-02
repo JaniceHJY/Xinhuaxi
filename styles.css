@@ -82,7 +82,7 @@ img{max-width: 100%;height: auto;}
 /* PDP Details */
 .pdp-description{margin-top:1rem;color:var(--muted);line-height:1.6;}
 .pdp-desc-pics{gap:1rem;margin-top:1rem;}
-.pdp-desc-pic{width:47%;height:auto;object-fit:cover;margin-right:1rem;flex-shrink:0;}
+.pdp-desc-pic{display:block;width:100%;height:auto;object-fit:cover;margin-right:1rem;flex-shrink:0;}
 
 /* About */
 .about-grid{display:grid;grid-template-columns:1fr 1fr;gap:2rem;align-items:center}
@@ -115,12 +115,13 @@ img{max-width: 100%;height: auto;}
   .btn {width: 100%;/* 手机按钮更好点 */text-align: center;}
   .cta-row {display: grid;gap: 0.75rem;}
   .product-card img {height: auto;aspect-ratio: 1 / 1;/* 手机更稳，不会被压扁 */object-fit: cover;}
-  .pdp-info{position:static;top:auto;}
-  .pdp-grid{grid-template-columns: 1fr;gap: 1.25rem;padding:1rem}
-  .pdp-desc-pic{width:100%;height:auto;object-fit:cover;margin-right:1rem;flex-shrink:0;}
+  .pdp-grid{display:flex;flex-direction: column;gap: 1.25rem;padding:1rem}
   .gallery-top{flex-direction: column;padding:initial}
-  .gallery-thumbs{flex: none;width: 100%;flex-direction:row;margin-right:0;overflow-x:auto;-webkit-overflow-scrolling: touch;padding-bottom: 6px;}
-  .thumb img{width: 64px;height: 64px;}
+  .gallery-thumbs{flex:none;width:100%;flex-direction:row;margin-right:0;overflow-x:auto;-webkit-overflow-scrolling: touch;padding-bottom: 6px;}
+  .thumb img{width:64px;height:64px;}
+  .pdp-info{position:static;top:auto}
+  .pdp-desc-pic{width:100%;height:auto;object-fit:cover;margin-right:1rem;flex-shrink:0}
+  .gallery-detail{grid-template-columns: 1fr;}
 }
 @media (max-width:560px){
   .products-grid{grid-template-columns:1fr}
