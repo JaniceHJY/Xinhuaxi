@@ -121,7 +121,7 @@ img{max-width: 100%;height: auto;}
   .thumb img{width:64px;height:64px;}
   .pdp-info{position:static;top:auto}
   .pdp-desc-pic{width:100%;height:auto;object-fit:cover;margin-right:1rem;flex-shrink:0}
-  .gallery-detail{grid-template-columns: 1fr; content-visibility:auto; contain-intrinsic-size:1000px；}
+  .gallery-detail{grid-template-columns: 1fr; content-visibility:auto; contain-intrinsic-size:1000px}
 }
 @media (max-width:560px){
   .products-grid{grid-template-columns:1fr}
