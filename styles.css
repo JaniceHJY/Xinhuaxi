@@ -20,7 +20,7 @@ img{max-width: 100%;height: auto;}
 .container{max-width:var(--container);margin:0 auto;padding:1rem;}
 .widecontainer{max-width:var(--widecontainer);margin:0 auto;padding:1rem;}
 .header-inner{display:flex;align-items:center;justify-content:space-between;gap:var(--gap);}
-.site-header{background:#fbfbfb;position:sticky;top:0;z-index:40;}
+.site-header{background:#fbfbfb;position:sticky;top:0}
 .brand{font-weight:700;color:var(--text);text-decoration:none;font-size:1.125rem;}
 .brand_logo{height:40px;width: auto;display: block;}
 
@@ -85,8 +85,8 @@ img{max-width: 100%;height: auto;}
 .pdp-desc-pic{display:block;width:100%;height:auto;object-fit:cover;margin-right:1rem;flex-shrink:0;}
 
 /* About */
-.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:2rem;align-items:center}
-.about-grid img{width:100%;border-radius:12px;position: sticky;top: 84px;}
+.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:2rem}
+.about-grid img{width:100%;border-radius:12px;position:sticky;top:84px}
 
 /* Contact */
 .contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:1rem;margin-top:1rem}
