@@ -37,7 +37,7 @@ img{max-width: 100%;height: auto;}
 /* Hero */
 .hero{padding:3rem 0;background:linear-gradient(180deg, rgba(134,179,154,0.06), transparent 40%)}
 .hero-grid{display:grid;grid-template-columns:1fr 1fr;gap:2rem;align-items:center}
-.hero-copy h1{margin:0 0 .5rem 0;font-size:2rem}
+.hero-copy h1{color:rgb(33, 34, 22);margin:0 0 .5rem 0;font-size:2。5rem}
 .hero-copy p{color:var(--muted)}
 .hero-image img{width:100%;border-radius:14px;display:block}
 
